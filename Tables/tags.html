@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table> <!-- <table> - Tworzenie tabeli -->
+        <tr> <!-- <tr> - Tworzenie wiersza -->
+            <th>Pierwszy naglowek</th> <!-- <th> - Tworzenie naglowka -->
+            <th>Drugi naglowek</th>
+        </tr>
+        <tr>
+            <td>Data cell 1</td> <!-- <td> Tworzenie komorki -->
+            <td>Datal cell 2</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="2">Naglowek 1</th> <!-- colspan="2" - rozszerzenia naglowka na 2 kolumny -->
+        </tr>
+        <tr>
+            <td rowspan="2">Jeden</td> <!-- rowspan ="2" - roszrzenie komorki na 2 wiersze -->
+            <td>Dwa</td>
+        </tr>
+        <tr>
+            <td>Trzy</td>
+        </tr>
+    </table>
+
+    <table>
+        <colgroup> <!-- <colgroup> - grupowanie kolumn i umozliwienei dodania stylu -->
+            <col style="background-color: red;" span="2"/> <!-- <col /> - umozliwienie stylu dla kolumny liczonej od lewej. <span> - okresla dla jakiej ilosci kolumn chcemy uzyc stylu -->
+            <col style="background-color: gold;"/> 
+        </colgroup>
+        <tr>
+            <th>Jeden</th> 
+            <th>Jeden</th>
+            <th>Jeden</th>
+        </tr>
+        <tr>
+            <td>Witam</td>
+            <td>Witam</td>
+            <td>Witam</td>
+        </tr>
+        <tr>
+            <td>jeden</td>
+            <td>dwa</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <table>
+        <thead> <!-- <thead> - dodanie naglowka tabeli, gdzie umieszczamy <caption> oraz <colgroup> -->
+            <caption></caption> <!-- <caption> - dodanie naglowka tabeli, czyli opis -->
+            <colgroup></colgroup>
+        </thead>
+        <tbody> <!-- <tbody> - glowna tresc tabeli -->
+
+        </tbody>
+        <tfoot> <!-- <tfoot> - stopka tabeli -->
+
+        </tfoot>
+    </table>
+
+    <table id="table1">
+        <tr>
+            <td>
+                <table id="nested"></table> <!-- Mozemy tworzyc tabele w tabeli -->
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th scope="col">Jeden</th> <!-- atrybut scope="col" okresla, do czego odnosi sie dany th, w tym przypadku do kolumny, czyli 'col' -->
+            <th scope="col">Dwa</th>
+        </tr>
+        <tr>
+            <th scope="row">Jeden</th>
+            <th scope="row">Dwa</th> <!-- atrybut scope="col" okresla, do czego odosi sie dany th, w tym przypadku do wiersza, czyli 'row'-->
+        </tr>
+    </table>
+
+    <!-- Alternatywa dla uzycia atrybutu scope-->
+
+    <table>
+        <tr>
+            <th>&nbsp;</th> <!-- &nbsp; -  pusta komorka -->
+            <th id="miejsce">Miejsce</th> <!-- w tym przypadku do kazdego th kolumny dodajemy id -->
+            <th id="czas">Czas</th>
+        </tr>
+        <tr>
+            <th id="imie">Imie</th> <!-- dodajemy tez id dla th wiersza -->
+            <td headers="miejsce imie">Poznan</td> <!-- w atrubycie headers wpisujemy kolejno id danego th w kolumnie oraz id th wiersza-->
+            <td headers="czas imie">8:00</td> <!-- headers=" 1.id kolumny 2.id wiersza"-->
+        </tr>
+    </table>
+
+    <!-- Tworzenie tabeli zwezonej od niezwezonej  "border-collapse"-->
+
+    <table style="border-collapse: collapse;border: 1px solid black;"> <!-- border-collapse: collapse; - tabela zwezona-->
+        <tr style="border: 1px solid black;">
+            <th style="border: 1px solid black;">Jeden</th>
+            <th style="border: 1px solid black;">Dwa</th>
+        </tr>
+        <tr style="border: 1px solid black;">
+            <td style="border: 1px solid black;">Jeden</td>
+            <td style="border: 1px solid black;">Dwa</td>
+        </tr>
+    </table>
+
+    <table style="border-collapse: separate;border: 1px solid black;"> <!-- border-collapse: separate; - tabela odseparowana -->
+        <tr style="border: 1px solid black;">
+            <th style="border: 1px solid black;">Jeden</th>
+            <th style="border: 1px solid black;">Dwa</th>
+        </tr>
+        <tr style="border: 1px solid black;">
+            <td style="border: 1px solid black;">Jeden</td>
+            <td style="border: 1px solid black;">Dwa</td>
+        </tr>
+    </table>
+</body>
+</html>

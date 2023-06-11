@@ -5,13 +5,20 @@
 
 table {
     border-collapse: collapse;
-    border: 2px solid black;
+    border: 1px solid grey;
+    text-align: center;
+    width: 100%;
 }
 
 tr, td, th {
-    border: 2px solid black;
+    border: 1px solid grey;
+    padding: 12px;
 }
 
-td {
+caption {
     padding: 8px;
+}
+
+th {
+    background-color: hsl(0, 0%, 50%,0.2);
 }

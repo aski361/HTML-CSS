@@ -35,3 +35,9 @@
     opacity: 0.2;
     /* opacity to przezroczystosc. 0.2 to 20% przezroczystosci */
 }
+
+#box-shadow {
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 10px pink;
+}

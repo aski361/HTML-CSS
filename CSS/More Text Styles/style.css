@@ -1,0 +1,59 @@
+#system-font-stack {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Bedzie szla przez kazda czcionke i uzyje tej, ktora posiada uzytkownik odwiedzajacy strone */
+}
+
+#google-font {
+    font-family: 'Pacifico', serif;
+}
+
+/* Uzycie za pomoca import */ 
+
+@import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
+
+#import {
+    font-family: 'Tangerine', serif;
+}
+
+/* @font-face -> czyli czcionka ktora jest pobrana na dysk */
+
+@font-face {
+    font-family: 'moja-super-czcionka';
+    src: url(Righteous/Righteous-Regular.ttf);
+}
+
+#font-face {
+    font-family: 'moja-super-czcionka';
+}
+
+/* font-style - czyli np. ustawienie tekstu italic  */
+
+#font-style {
+    font-style: italic;
+}
+
+/* letter-spacing - dodawania przestrzeni pomiedzy literami*/
+
+#letter-spacing {
+    letter-spacing: 0.7rem;
+}
+
+/* Zwiekszenie/zmniejszenie przestrzeni pomiedzy liniami */
+
+#line-height {
+    width: 40vw;
+    line-height: 1.5rem;
+}
+
+/* text-transform - male,duze litery, kazde slowo z duzej litery */
+
+#text-transform {
+    text-transform: capitalizes;
+}
+
+/* box-shadow - Dodanie cienia do tekstu | x y blur color |
+      mozna uzywac ujemnych wartosci*/
+
+#text-shadow {
+    text-shadow: 2px 3px 2px pink;
+}

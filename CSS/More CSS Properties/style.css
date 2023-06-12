@@ -1,0 +1,37 @@
+#tlo {
+    width: 20vw;
+    height: 10vh;
+    background: pink;
+    /* background - ma rozne opcje tutaj wybrana ze kolor to pink, czyli background-color*/
+}
+
+#tlo2 {
+    width: 1000px;
+    height: 700px;
+    background: url('pexels-photo-1402787.jpeg');
+    /* Tutaj wybrane ze dodanie zdjecia mozna tez np dodac repeat-y, repeat-x */
+}
+
+#border-border-radius {
+    background:pink;
+    width: 300px;
+    height: 400px;
+    /* Krotki zapis to borde | szerokosc kolor styl*/
+    border: 10px solid red;
+    /* border-radius - czyli zaokraglanie bokow*/
+    border-radius: 10px / 20px;
+}
+
+#overflow {
+    width: 200px;
+    height: 200px;
+    /* Dodajemy overflow np. hidden to ustawia tak ,ze jest uciete,
+    scroll to mozna skrollowac tekst jezeli box jest za maly */
+    overflow: scroll;
+}
+
+#opacity {
+    background-color: brown;
+    opacity: 0.2;
+    /* opacity to przezroczystosc. 0.2 to 20% przezroczystosci */
+}

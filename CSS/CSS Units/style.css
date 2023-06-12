@@ -1,0 +1,30 @@
+
+h1 {
+    font-size: 24px; /* ustawienie pixeli */
+}
+
+p#em {
+    font-size: 1em; /* jezeli font-size to 16px to 2em == 32px.
+    Sledzi font-size parenta, jezeli parent ma 8px to 1em to 8px */
+}
+
+p#rem {
+    font-size: 2rem; /* Taka sama matematyka jak u em, jedyna roznica 
+    to taka ze nie sledzi parenta*/
+}
+
+p#vw {
+    background-color: antiquewhite;
+    width: 45vw; /* vw to szerokosc 45vw to 45% szerokosci ekranu*/
+}
+
+p#vh {
+    background-color: aqua;
+    height: 30vh; /* vh to wysokosc 30vh to 30% wysokosci ekranu.*/
+}
+
+/* vh oraz vw sa przydatne do aplikacji, ktore sa na cala strone np. */
+
+/* px to absolute units */
+
+/* em oraz vh to relative units */

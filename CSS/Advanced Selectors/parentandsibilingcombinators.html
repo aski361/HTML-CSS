@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent and Sibiling Cominators</title>
+    <style>
+        main > div {
+            /* Ta zasada odnosi sie tylko do child divow czyli z klasa child */
+        }
+
+        main > div > div {
+            /* Ta zasada odnosi sie tylko do divow z klasa grand-child */
+        }
+
+        .group1 + div {
+            /* Ta zasada odnosi sie do diva z klasa group1 + group2 */
+        }
+
+        .group1 + div + div {
+            /* Ta zasada odnosi sie do diva z klasa group1 + group2 + group3 */
+        }
+
+        .group1 ~ div {
+            /* Ta zasada odnosi sie do wszystkich divow, czyli group1, group2 oraz group3 */
+        }
+    </style>
+</head>
+<body>
+    <main class="parent">
+        <div class="child group1">
+            <div class="grand-child group1"></div>
+        </div>
+        <div class="child group2">
+            <div class="grand-child group2"></div>
+        </div>
+        <div class="child group3">
+            <div class="grand-child group1"></div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+
+        :root {
+            /* Gora samego dokumentu CSS. Jedyny element, ktory nie ma parenta.
+            Dodajemy tam 'globalne zasady'. CSS variables lub zasady takie jak box-sizing: border-box; */
+        }
+
+        .myDiv :nth-child(4) {
+            /* Czwarty element bedzie pokolorowany na czerwono*/
+            color: red;
+        }
+
+        .myDiv :nth-child(3n) {
+            /* Co trzeci element bedzie zielony */
+            color: green;
+        }
+
+        .myDiv :nth-child(2n + 5) {
+            /* Co drugi element zaczynajc od 5 bedzie brazowy */
+            color:brown
+        }
+
+        .myDiv :nth-child(even) {
+            /* Wszystki parzyste elementy beda mialy color 'cornfloweblue' */
+            background-color: cornflowerblue;
+        }
+        
+        .child :first-child {
+            /* Pierwsze dziecko danego diva */
+            color: green;
+        }
+
+        .child :last-child {
+            /* Ostatnie dziecko danego diva */
+            color: blue;
+        }
+
+        h1:empty {
+            /* Pusty h1 bedzie mialo takie obramowanie */
+            border: 2px solid black;
+        }
+
+        textarea:focus {
+            /* Jezeli klikniemy na dany element to bedzie aktywna*/
+            background-color: pink;
+        }
+
+        .hover:hover {
+            /* Jezeli najedziemy to zmieni sie kolor */
+            background-color: pink;
+        }
+
+        button:active {
+            /* Podczas nacisniecia zmieni sie kolor */
+            background-color: pink;
+        }
+        a:link {
+            color: gold;
+        }
+        a:visited {
+            color: blue;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="myDiv">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <div class="child">
+        <div>:frist-child</div>
+        <div>Drugi</div>
+        <div>:list-child</div>
+    </div>
+
+    <h1></h1>
+
+    <textarea name="" id="" cols="30" rows="10">:focus</textarea>
+    <p class="hover">:hover</p>
+    <button>:active</button>
+    <p><a href="https://github.com/aski361">Link odwiedzony :link</a></p>
+    <p><a href="https://github.com/aski361">Link nieodwiedzony :link</a></p>
+</body>
+</html>

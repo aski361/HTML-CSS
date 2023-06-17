@@ -1,0 +1,23 @@
+1. Jak dostac sie do dziecka parenta?
+2. Jak dsotac sie do dziecka dziecka parenta?
+3. Jak dostac sie np. do jakiegos diva oraz do jego nastepnego elementu?
+4. Jak dostac sie np. do jakiegos diva raz do jego nastpnego i nastepnego elementu?
+5. Jak dostac sie np. do jakiegos diva oraz do wszystkich jego nastepncyh elementow?
+6. Jaka pseudoklasa pozwala zmienic np. kolor podczas klikniecna na element <textarea>
+7. Jaka pseudoklasa pozwala zmienic background-color po najechaniu na dany element?
+8. Jaka pseudoklasa zmieni np. color lub background-color po nacisnieciu i bedzie dzialac az do zwolnienia przycisku?
+9. Jaka pseudoklasa pozwala zmieniac np. color odzwiedzonego lub nieodzwiedzonego linku?
+10. Jaka selektor umieszczamy na samej gorze pliku CSS? I co tam mozemy umiescic?
+11. Jak zmienic np. color pierwszego i ostatniego dziecka w danym parencie?
+12. Jak zmienic np. border parenta bez dziecka?
+13. Jak zmienic np. 5 element w klasie myList? Jak zmienic co trzeci element  w klasie myList? Jak zmienic co trzeci element w klasie myList, zaczynajac od 
+trzeciego elementu? Jak zmienic parzyste i nieparzyste elementy?
+14. Jak zmienic styl punktowy w <li> ?
+15. Jak zmienic pierwsza litere oraz pierwsza linie?   
+16. Jak dodac cos np. przed dany element? Jak umiescic cos po danym elemencie?
+17. Jak mozemy zmienic kolor danego elementu poprzez uzycie jego atrybutu?
+18. Jak mozemy zmienic np. border danego elementu poprzez uzycie selektora + atrbutu?
+19. Jak mozemy zmienic np. kolo danego elementu poprzez uzycie selektore + atrybytu z wartoscia?
+20. Jak mozemy zmatchowac klasy zaczynajace sie np. od 'aus'?
+21. Jak mozemy zmatchowac klasy konczacie sie np. na 'arz'?
+22. Jak mozemy zmatchowa klasy ktore maja w sobie np. 'ill'?s

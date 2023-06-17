@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        li::marker {
+            /* Dzieki temu pseudo elementowi mozemy zmieniac wartosc punktowa */
+            content: '😀';
+            font-size: 1.2em;
+        }
+
+        .firstletter::first-letter {
+            /* Zmiana pierwszej litery */
+            color: red;
+        }
+
+        h1 {
+            width: 25vh;
+        }
+
+        h1::first-line {
+            /* Zmiana pierwszego wiersza */
+            color: green;
+        }
+
+        span::before {
+            content: 'ZDANIE PRZED ::before';
+            color: red;
+        }
+
+        span::after {
+            content: 'ZDANIE ZA ::after';
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <Li>Lista numer 1 ::marker</Li>
+        <Li>Lista numer 2 ::marker</Li>
+        <Li>Lista numer 3 ::marker</Li>
+    </ul>
+
+
+    <p class="firstletter">Pierwsza litera zmieni sie ::first-letter</p>
+
+    <h1>Pierwsza linia w danym zdaniu zmieni swoj kolor ::first-line</h1>
+
+    <p>Tutaj pojawi sie <span> content przed i po ::before ::after </span></p>
+
+</body>
+</html>

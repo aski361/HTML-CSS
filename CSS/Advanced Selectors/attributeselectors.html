@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selectors</title>
+    <style>
+        /* [attribute] -> general selector
+            selector[attribute] -> selektor + atrybut
+            [attribute='value'] -> konkretny atrybut z wartoscia */
+
+            [id] {
+                color: red;
+            }
+
+            p[class] {
+                color:green;
+            }
+
+            p[class='value'] {
+                color: blue;
+            }
+
+            /* [attribute^='value'] -> bedzie pasowalo kazde ktore zaczyna sie od 'value'
+                [attribute$='value'] -> bedzie pasowalo kazde ktore konzcy sie na 'value' 
+                [attribute*='value' -> bedzie pasowalo kazde ktore ma 'value' w sobie */
+
+            [id^='aus'] {
+                color: brown;
+            }
+
+            [id$='b'] {
+                color: gold;
+            }
+
+            [id*='ill'] {
+                color:blueviolet
+            }
+    </style>
+</head>
+<body>
+    <p id="attr">Witam serdecznie</p>
+    <p class="attr">Witam ponownie</p>
+    <p class="value">Jezeli zmienimy to bedzie niebieski</p>
+
+    <h1 id="austria">Zaczynajace sie id na 'aus' beda mialy kolor brazowy</h1>
+    <h1 id="australia">Zaczynajace sie id na 'aus' beda mialy kolor brazowy</h1>
+
+    <h1 id="mamb">Konczace sie slowa na 'b' beda mialy kolor zloty</h1>
+    <h1 id="tatb">Konczace sie slowa na 'b' beda mialy kolor zloty</h1>
+
+    <h1 id="bill">Jezeli w srodku bedzie 'ill' to bedzie kolor fioletowy</h1>
+    <h1 id="jill">Jezeli w srodku bedzie 'ill' to bedzie kolor fioletowy</h1>
+    <h1 id="silly">Jezeli w srodku bedzie 'ill' to bedzie kolor fioletowy</h1>
+</body>
+</html>

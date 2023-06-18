@@ -1,0 +1,4 @@
+1. Z pompca jakiej funkcji mozemy oblicz np. jak wysoki i szeroki ma byc <main> na stronie uwzgledniajac <footer> oraz <header>
+2. Z pomoca jakiej funckji mozemy zrobic tak aby obraz byl np. 100% danego parenta jezeli bedzie mniejszy niz 300px;
+3. Z pomoca jakiej funkcji mozemy zrobic tak aby obraz byl np. 4em lub 50% danego parenta, jezeli sa wieksze niz 100px
+4. Z pomoca jakiej funckji mozemy wybrac najmniejsza, idelna i najwieksza wartosc?

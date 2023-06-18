@@ -1,0 +1,5 @@
+1. Jakie mozemy ustawic pozicje danego elementu?
+2. Roznica miedzy static a relative?    
+3. Jak mozemy pozycjonowac dany element bez przeszkadzania innym? 
+4. Jak zrobic zeby np. navbar byl caly czas wgornej pozycji?
+5. Jak stworzyc element, ktoy po przeskrolowaniu bedzie caly czas przy gornej krawedzi?

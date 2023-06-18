@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static and relative postioning</title>
+    <style>
+        
+        /* Tez jest usuwane z flow dokumentu */
+        /* Zostaje zawsze w tym samym miejscu, dlatego jest uzyteczne np dla nav barow */
+    
+        body {
+            height: 200vh;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 4px solid red;
+            position: fixed;
+            left: 50%; 
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

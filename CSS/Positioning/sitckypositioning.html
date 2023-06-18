@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky positioning</title>
+    <style>
+
+        /* Sticky elementy zachowuja sie tak samo jak normalne element, lecz gdy je przeskorulejemy to zaczna sie zachowywac jak fixed elementy */
+
+        body {
+            height: 300vh;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 150px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 4px solid red;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 4px solid red;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 4px solid red;
+        }
+
+        h1 {
+            background: red;
+            position: sticky;
+            top: 0;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+    <h1>STICKY ELEMENT</h1>
+</body>
+</html>

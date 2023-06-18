@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static and relative postioning</title>
+    <style>
+        /* Defaultowo elementy maja ustawione position: static;  */
+        /* Roznica pomiedzy positiong: static; a position: relative; to taka ze, position: static, nie ma wlasnosci: top,left,right,bottom*/
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 4px solid red;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 4px solid red;
+            position: relative;
+            top: 40px; left: 40px;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 4px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

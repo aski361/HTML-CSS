@@ -1,0 +1,7 @@
+1. Jak stworzyc custom properties?
+2. Jak uzyskac dostep do custom properties?
+3. Jak tworzymy fallback values? 
+4. Scope custom properties dla parent > child ?
+5. Jak stworzyc globalny custom properties?
+6. Tworzenie themes w JS
+7. Tworzenie themes w HTML I CSS

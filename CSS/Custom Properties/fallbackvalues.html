@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallback values</title>
+    <style>
+        .fallback {
+            --color-text: white;
+
+            color: var(--color-text-none, red); /* Drugi argument jest opcjonalny */
+            /* Jezeli pierwszy argument jest niezadeklarowany lub wartosc jest zla zostanie wybrany fallback value */
+        }
+
+        .fallback2 {
+            --color-text:yellow;
+
+            color: var(--color-text-none, var(--color-text,green));
+            /* Fallback value moze byc custom propertisem  */
+        }
+    </style>
+</head>
+<body>
+    <p class="fallback">Pierwszy fallback value</p>
+    <p class="fallback2">Drugi fallback value</p>
+</body>
+</html>

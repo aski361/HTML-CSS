@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Properties</title>
+    <style>
+        :root {
+            /* Jezeli chcemy aby miec zmienne, do ktorych mozemy miec dostep globalny musimy uzyc :root */
+            /* :root jest jak html tylko ze ma wieksza specyfikacje */
+            /* Dzieki temu container2-paragraph moze miec dostep do tej zmiennej, bo dla roota kazdy to child teraz */
+            --font-color-global: yellow;
+        }
+
+        .container {
+            --font-color: red;
+        }
+
+        .container-paragraph {
+            /* Tutaj zadziala ze wzgledu na to ze jest to parent > child */
+            color: var(--font-color)
+        }
+
+        .container2-paragraph {
+            /* Tutaj nie bedzie dzialal dany var ze wzgledu na to,ze nie sa parent > child */
+            color: var(--font-color,var(--font-color-global))
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="container-paragraph">COOL TEXT</p>
+    </div>
+
+    <div class="container2">
+        <p class="container2-paragraph">COOL TEXT 2</p>
+    </div>
+</body>
+</html>

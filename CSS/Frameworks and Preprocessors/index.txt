@@ -1,0 +1,13 @@
+Preprocessors - jezeki, ktore moga pomoc Ci pisac CSS latwiej. Redukuja powtorzenia kodua oraz wprowadzaja rozne rzeczy 
+oszczedzajac czas.
+Przyklady SASS, LESS, Stylus.
+
+https://sass-lang.com/
+https://lesscss.org/
+https://stylus-lang.com/
+
+Frameworks - szkielet do budowy aplikacji.
+Przyklady to Bootstrap, Tailwind
+
+https://getbootstrap.com/
+https://tailwindcss.com/docs/installation

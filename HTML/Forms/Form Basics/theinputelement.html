@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The input element</title>
+</head>
+<body>
+    <input type="text">  <br><br>
+    <!-- input posiada atrybut type, ktory mozemy zmieniac w miare zaleznosci czego potrzebujemy -->
+
+    <div>
+        <label for="first_name">First name:</label>
+        <input type="text" id="first_name">
+    </div>
+    <!-- Do tworzenia labelu, czyli poinformowania uzytkownika jaki type danych bedzie wprowadzal -> <label></label> -->
+    <!-- Atrybut for musi byc taki sam jak id w danym <input> -->
+
+    <div>
+        <label for="first_name">First name:</label>
+        <input type="text" id="first_name" placeholder="Bob..">
+    </div>
+    <!-- placeholder, sluzy do zademonstrowania co powinnismy wpisac -->
+
+    <div>
+        <label for="first_name">First name:</label>
+        <input type="text" id="first_name" name="first_name">
+    </div>
+    <!-- atrybut name to odniesienie do danych wprowadzonych do pola input. Mozemy o niej myslec jak o zmiennej dla input -->
+
+
+    <div>
+        <label for="user_email">Email</label>
+        <input type="email" name="email" id="user_email" placeholder="you@wp.pl">
+    </div>
+    <!-- type="email" -> tworzenie pola email -->
+
+    <div>
+        <label for="user_password">Password:</label>
+        <input type="password" id="user_password" name="password">
+    </div>
+    <!-- type="password" -> tworzenie pola hasla -->
+
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount">
+    </div>
+    <!-- type="number" -> tworzenie pola, gdzie mozemy wprowadzac tylko liczby -->
+
+    <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+    </div>
+    <!-- type="date" -> tworzenie pola do wprowadzania daty -->
+
+
+    <div>
+        <textarea name="" id="" cols="30" rows="10">Wpisz jaki tekst...</textarea>
+    </div>
+    <!-- textarea -> input box, ktory akceptuje tekst np. kilka linijek tekstu  -->
+    <!-- rows -> height -->
+    <!-- cols -> width -->
+</body>
+</html>

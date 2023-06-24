@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection elements</title>
+</head>
+<body>
+    <select name="car" id="">
+        <option value="mercedes">Mercedes</option>
+        <option value="tesla">Teslaa</option>
+        <option value="volvo" selected>Volvo</option>
+        <option value="bmw">BMW</option>
+    </select>
+    <!-- <select></select> -> tak tworzymy liste wyboru  -->
+    <!-- <option value=""></option> -> dodanie elementu do listy, value zostanie wyslany na serwer, kiedy formularz zostanie zatwierdzony -->
+    <!-- atrybut selected -> dana opcja zostanie wybrana, zeby zostala wyswietlona jako pierwsza -->
+
+    <select name="fashion" id="">
+        <optgroup label="Clothing">
+            <option value="t_shirt">T-shirt</option>
+            <option value="sweater">Sweater</option>
+        </optgroup>
+        <optgroup label="Foot wear">
+            <option value="sneakers">Sneakers</option>
+            <option value="boots">Boots</option>
+        </optgroup>
+    </select>
+    <!-- <optgroup label=""> -> tworzenie danej kategorii, w label wpisujemy nasza kategorie -->
+
+    <h1>Ticket type</h1>
+    <div>
+        <input type="radio" id="child" name="ticket_type">
+        <label for="child">Child</label>
+    </div>
+    <div>
+        <input type="radio" id="adult" name="ticket_type" checked>
+        <label for="adult">Adult</label>
+    </div>
+    <!-- input="radio" -> tworzenie przycisku opcji -->
+    <!-- Dodajemy tez label do tego -->
+    <!-- atrybut "checked" oznacza, ze ta opcja zostanie wybrana domyslnie po zaladowaniu przegladarki -->
+
+    <h1>Pizza topping</h1>
+    <div>
+        <input type="checkbox" name="topping" id="sausage">
+        <label for="sausage">Sausage</label>
+    </div>
+    <div>
+        <input type="checkbox" name="topping" id="onions" checked>
+        <label for="onions">Onions</label>
+    </div>
+    <div>
+        <input type="checkbox" name="topping" id="tomato">
+        <label for="tomato">Tomato</label>
+    </div>
+    <!-- input="checkbox" -> tworzenie checkboxa, czyli mozemy wybrac kilka opcji -->
+    <!-- dodajemy tez do tego label -->
+    <!-- atrybut "checked" to znaczy ze zostanie wybrane domyslnie po zaladowaniu przegladarki -->
+</body>
+</html>

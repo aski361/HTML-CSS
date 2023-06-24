@@ -31,32 +31,34 @@
 
     <h1>Ticket type</h1>
     <div>
-        <input type="radio" id="child" name="ticket_type">
+        <input type="radio" id="child" name="ticket_type" value="child">
         <label for="child">Child</label>
     </div>
     <div>
-        <input type="radio" id="adult" name="ticket_type" checked>
+        <input type="radio" id="adult" name="ticket_type" value="adult" checked>
         <label for="adult">Adult</label>
     </div>
     <!-- input="radio" -> tworzenie przycisku opcji -->
     <!-- Dodajemy tez label do tego -->
     <!-- atrybut "checked" oznacza, ze ta opcja zostanie wybrana domyslnie po zaladowaniu przegladarki -->
+    <!-- value to wartosc jaka jest wysylana na serwer -->
 
     <h1>Pizza topping</h1>
     <div>
-        <input type="checkbox" name="topping" id="sausage">
+        <input type="checkbox" name="topping" id="sausage" value="sausage">
         <label for="sausage">Sausage</label>
     </div>
     <div>
-        <input type="checkbox" name="topping" id="onions" checked>
+        <input type="checkbox" name="topping" id="onions" value="onions" checked>
         <label for="onions">Onions</label>
     </div>
     <div>
-        <input type="checkbox" name="topping" id="tomato">
+        <input type="checkbox" name="topping" id="tomato" value="tomato">
         <label for="tomato">Tomato</label>
     </div>
     <!-- input="checkbox" -> tworzenie checkboxa, czyli mozemy wybrac kilka opcji -->
     <!-- dodajemy tez do tego label -->
     <!-- atrybut "checked" to znaczy ze zostanie wybrane domyslnie po zaladowaniu przegladarki -->
+    <!-- value to wartosc jaka jest wysylana na serwer -->
 </body>
 </html>
